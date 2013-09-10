@@ -1,5 +1,7 @@
 ## Pretengineer
 
+A blog located at [pretengineer.com](http://pretengineer.com).
+
 ### Run Locally
 
 Install Jekyll, the static site builder:
