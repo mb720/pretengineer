@@ -39,26 +39,19 @@
         ping: function(){
             setTimeout(function(){
                 contributorCheck.init();
-            }, 15000);
+            }, 10000);
         },
 
         updateContributors: function(json){
             if (!json) return;
-
-            // Should be ready soon. Try again in 5 seconds.
-            if (json["wait"] == true) {
-                setTimeout(function(){
-                    contributorCheck.init();
-                }, 5000);
-                return;
-            };
+            if (json["wait"] == true) return;
 
             var tmpl = $('#contributor-template').html();
             el = $('.author-list').empty();
 
             $.each(json["contributors"], function(index, contributor){
                 el.append(tmpl.substitute({
-                    'image_url' : contributor["image_url"],
+                    'image_url': contributor["image_url"],
                     'url'      : contributor["url"],
                     'username' : contributor["username"],
                 }));
