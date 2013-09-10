@@ -7,17 +7,13 @@ Install Jekyll, the static site builder:
     $ [sudo] gem install jekyll
     ...
 
-Clone the source:
-
-    $ git clone https://github.com/pearkes/pretengineer.git
-    ...
 
 Run the development server:
 
-    $ make run
+    $ jekyll serve -w
     ...
 
-By default, the server runs on http://127.0.0.1:4000.
+By default, the server runs on http://localhost:4000.
 
 ### Make Changes
 
