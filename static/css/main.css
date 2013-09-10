@@ -86,6 +86,11 @@ h3 {
   padding-bottom: 4px;
 }
 
+.authors p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .discussion {
   font-style: italic;
   border: 2px solid #282828;
