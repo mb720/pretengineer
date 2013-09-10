@@ -2,3 +2,7 @@ safe: false
 lsi: false
 pygments: true
 permalink: /post/:title
+
+name: The Pretengineer
+description: The Pretengineer is kind of a blog, mostly written by Jack Pearkes, but other folks contribute. Each post has a list of contributors at the bottom.
+url: http://pretengineer.com

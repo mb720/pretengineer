@@ -1,6 +1,7 @@
 ---
 title: The Pretengineer Colophon
 layout: page
+summary: Who writes this stuff, and how it's written.
 ---
 
 The Pretengineer is kind of a blog, mostly written by [Jack Pearkes](http://jack.ly), but other
