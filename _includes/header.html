@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/atom+xml" title="The Pretengineer - Feed" href="https://pretengineer.com/index.xml">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6693252/622022/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+    <title>Pretengineer | {{ page.title }}</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (!String.prototype.substitute) {
+        String.prototype.substitute = function(object, regexp){
+            return String(this).replace(regexp || (/\\?\{([^{}]+)\}/g), function(match, name){
+                if (match.charAt(0) == '\\') return match.slice(1);
+                return (object[name] != null) ? object[name] : '';
+            });
+        };
+    }
+
+    var contributorCheck = {
+        init: function(){
+            // Only if we have a filename to check.
+            if (contributorCheckFile) {
+                contributorCheck.makeRequest();
+                contributorCheck.ping();
+            }
+        },
+
+        makeRequest: function(){
+            $.getJSON('http://api.pretengineer.com/contributors/' + contributorCheckFile, contributorCheck.getResponse);
+        },
+
+        getResponse: function(json){
+            if (!json) return;
+            contributorCheck.updateContributors(json);
+        },
+
+        ping: function(){
+            setTimeout(function(){
+                contributorCheck.init();
+            }, 15000);
+        },
+
+        updateContributors: function(json){
+            if (!json) return;
+
+            // Should be ready soon. Try again in 5 seconds.
+            if (json["wait"] == true) {
+                setTimeout(function(){
+                    contributorCheck.init();
+                }, 5000);
+                return;
+            };
+
+            var tmpl = $('#contributor-template').html();
+            el = $('.author-list').empty();
+
+            $.each(json["contributors"], function(index, contributor){
+                el.append(tmpl.substitute({
+                    'image_url' : contributor["image_url"],
+                    'url'      : contributor["url"],
+                    'username' : contributor["username"],
+                }));
+            });
+
+        }
+    };
+    </script>
+    <script type="text/template" id="contributor-template">
+    <li>
+      <img height="50" src="{image_url}"/>
+      <a href="{url}">{username}</a>
+    </li>
+    </script>
+
+</head>
+<body>

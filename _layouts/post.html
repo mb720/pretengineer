@@ -1,0 +1,29 @@
+{% include header.html %}
+<script>
+var contributorCheckFile = "{{ page.filename }}";
+contributorCheck.init();
+</script>
+<div class="row">
+  <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
+        <div class="text-center">
+          <header>
+            <h1 class="post-title">{{ page.title }}</h1>
+          </header>
+        </div>
+        <article class="post">
+          {% if page.date %}
+          <p class="date">Originally written on {{ page.date | date_to_string }}.</p>
+          {% endif %}
+          {% if page.summary %}
+          <p class="summary">{{ page.summary }}</p>
+          {% endif %}
+          <section class="content">
+            <p>{{ content }}</p>
+          </section>
+        </article>
+      </div>
+  </div>
+{% include discussion.html %}
+{% include footer.html %}
+</div>

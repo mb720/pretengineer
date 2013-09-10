@@ -1,0 +1,4 @@
+safe: false
+lsi: false
+pygments: true
+permalink: /post/:title
