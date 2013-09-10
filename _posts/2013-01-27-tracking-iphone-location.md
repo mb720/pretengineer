@@ -1,7 +1,7 @@
 ---
 title: Tracking Your iPhone's Location
 layout: post
-summary: Using Apple APIs to track the your phones location
+summary: Using Apple APIs to track your phone's location
 filename: _posts/2013-01-27-tracking-iphone-location.md
 ---
 <iframe width='720' height='400' frameBorder='0' src='http://a.tiles.mapbox.com/v3/pearkes.sf.html#12/37.7806/-122.4103'> </iframe>
