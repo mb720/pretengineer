@@ -11,6 +11,15 @@ a {
   color: #979ecf;
 }
 
+.content .img-center {
+  text-align: center;
+}
+
+p {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
 a.dark {
   color: inherit;
 }
@@ -22,6 +31,13 @@ footer {
 h1, h2, h3, h4, h4 {
   font-family: 'Verlag A', 'Verlag B';
   font-weight: 700;
+}
+
+blockquote p {
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 0;
+  line-height: 1.6;
 }
 
 .post h2, h3, h4, h4 {

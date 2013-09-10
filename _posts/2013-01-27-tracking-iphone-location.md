@@ -73,7 +73,7 @@ The location data you get back is pretty good, typically. There's an "accuracy"
 value included, so you could potentially filter out inaccurate locations given
 by cell towers and the like.
 
-Sam Soffes also made a <a href="https://github.com/soffes/findi">great RubyGem</a> that does the same thing.
+Sam Soffes also made a [great RubyGem](https://github.com/soffes/findi) that does the same thing.
 
 In order to store your location over time, you may want to run a
 simple Heroku app, or something like it. I've created an example of such a service with detailed instructions,
