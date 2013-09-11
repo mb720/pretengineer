@@ -3,13 +3,15 @@
   <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
         {% for post in site.posts %}
+        {% if post.draft != true %}
         <article class="post">
           {% if post.summary %}
           <h4><a class="dark" href="{{post.url}}">{{ post.title }} >></a></h4>
           <p>{{ post.summary }}</p>
           {% endif %}
         </article>
-      {% endfor %}
+        {% endif %}
+        {% endfor %}
     </div>
   </div>
 </div>
