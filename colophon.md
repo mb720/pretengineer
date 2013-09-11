@@ -11,7 +11,7 @@ You can see a list of all posts on the [index page](/).
 
 The tools used here:
 
-- [Github](https://github.com), for hosting, versioning, writing and contributions
+- [GitHub](https://github.com), for hosting, versioning, writing and contributions
 - [Jekyll](https://github.com/mojombo/jekyll), for templating, markdown formatting and rendering of HTML
 - An API used to display the contributor information from GitHub
 
