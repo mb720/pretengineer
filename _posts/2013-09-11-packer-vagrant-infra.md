@@ -86,8 +86,7 @@ machine, looking something like this:
       config.vm.synced_folder "../data", "/vagrant_data"
 
       config.vm.provision :puppet do |puppet|
-        puppet.manifests_path = "manifests"
-        puppet.manifest_file  = "init.pp"
+        puppet.manifest_file  = "site.pp"
       end
     end
 
@@ -122,7 +121,7 @@ your Puppet scripts over a base image (like Ubuntu 12.04), and creating a Vagran
 box. Packer can automate that procedure.
 
 However, this doesn't replace provisioning in development. If you make changes
-to your Puppet scripts, simply re-run them with Vagrant `vagrant provison`. No
+to your Puppet scripts, simply re-run them with `vagrant provison`. No
 need to re-build the base image.
 
 So, that's how you use Packer to improve your development workflow. But
@@ -148,11 +147,8 @@ to include Amazon AWS.
         ...
       }],
       "provisioners": [{
-        "type": "shell",
-        "inline": [
-          "sudo apt-get install -y redis-server"
-          ...
-        ]
+        "type": "puppet-masterless",
+        "manifest_file": "site.pp"
       }],
       "post-processors": ["vagrant"]
     }
