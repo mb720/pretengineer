@@ -113,3 +113,9 @@ h3 {
 .author-username {
   margin-left: 8px;
 }
+
+.draft {
+  font-size: 20px;
+  background-color: yellow;
+  text-align: center;
+}
