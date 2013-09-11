@@ -213,7 +213,7 @@ Packer has excellent documentation. Here is some further reading:
 - Packer Provisioners, such as [Puppet](http://www.packer.io/docs/provisioners/puppet-masterless.html), [Chef](http://www.packer.io/docs/provisioners/chef-solo.html) and [Salt](http://www.packer.io/docs/provisioners/salt-masterless.html)
 - The full Packer [Documentationn](http://www.packer.io/docs)
 
-[^1]: This, to me, is where things can be both improved. It's a bit of a hassle
+[^1]: This, to me, is where things can be improved. It's a bit of a hassle
 to re-build images and re-launch them into your infrastructure. Using Amazon's tools,
 such as Elastic Load Balancer, can greatly reduce pain, but there's definitely still
 things to fix.
