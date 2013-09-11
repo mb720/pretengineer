@@ -127,7 +127,7 @@ need to re-build the base image.
 So, that's how you use Packer to improve your development workflow. But
 we can go further.
 
-## Packer in Production
+## Packer and Your Infrastucture
 
 Using Packer to build images for a production environment is identical
 to how you use it in development. Let's expand the example from above
