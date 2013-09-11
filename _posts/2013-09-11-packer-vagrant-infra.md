@@ -3,7 +3,6 @@ title: Packer, Vagrant and your Infrastructure – Fitting the Pieces Together
 layout: post
 summary: Where does Packer, the image creation tool, fit into your workflow?
 filename: _posts/2013-09-11-packer-vagrant-infra.md
-draft: true
 ---
 
 Questions like this come up on the [Packer](http://packer.io) mailing list and in IRC
