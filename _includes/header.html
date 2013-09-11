@@ -41,7 +41,6 @@
             // Only if we have a filename to check.
             if (contributorCheckFile) {
                 contributorCheck.makeRequest();
-                contributorCheck.ping();
             }
         },
 
@@ -57,12 +56,21 @@
         ping: function(){
             setTimeout(function(){
                 contributorCheck.init();
-            }, 10000);
+            }, 5000);
         },
 
         updateContributors: function(json){
-            if (!json) return;
-            if (json["wait"] == true) return;
+            // Try again soon
+            if (!json) {
+                contributorCheck.ping();
+                return;
+            };
+
+            // Try again soon
+            if (json["wait"] == true) {
+                contributorCheck.ping();
+                return;
+            };
 
             var tmpl = $('#contributor-template').html();
             el = $('.author-list').empty();
