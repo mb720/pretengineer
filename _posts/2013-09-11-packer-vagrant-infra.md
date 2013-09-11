@@ -5,7 +5,7 @@ summary: Where does Packer, the image creation tool, fit into your workflow?
 filename: _posts/2013-09-11-packer-vagrant-infra.md
 ---
 
-Questions like this come up in the [Packer](http://packer.io) mailing list and IRC
+Questions like this come up on the [Packer](http://packer.io) mailing list and in IRC
 a fair bit:
 
 > Ok, I'm trying to understand how Packer relates to Vagrant. In particular,
