@@ -1,7 +1,10 @@
 {% include header.html %}
 <script>
 var contributorCheckFile = "{{ page.filename }}";
-contributorCheck.init();
+
+$(function() {
+  contributorCheck.init();
+});
 </script>
 <div class="row">
   <div class="container">
