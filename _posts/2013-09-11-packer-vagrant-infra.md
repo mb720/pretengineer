@@ -14,7 +14,7 @@ a fair bit:
 
 It's a good question. I'm going to try to answer this from a high level, explaining
 each component along the way. The goal here is to eliminate some confusion that
-apparently exist about the tools.
+apparently exists about the tools.
 
 ## Packer
 
@@ -96,7 +96,7 @@ communication with that virtual machine, configured above.
 You have your development environment automatically provisioning with
 Puppet. It bootstraps your application, installs dependencies and so forth.
 
-However, it takes 40 minutes to do that, so developers have to wait when
+However, it takes time to do that, so developers have to wait when
 they create new machines. Additionally, small issues with stateful resources
 can make the provisioner fail, creating a hassle for the developer and potentially
 their teammates.
