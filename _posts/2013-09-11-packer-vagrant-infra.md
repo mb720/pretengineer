@@ -40,7 +40,7 @@ of it. A provisioner could be:
 
 Base images vary depending on the format you're outputting. For example,
 Virtualbox expects an `.iso` image of an operating system, like Ubuntu,
-as does VMWare. But, while creating an Amazon AMI, you need to give it
+as does VMware. But, while creating an Amazon AMI, you need to give it
 a base `ami`, which again, is an operating system like Ubuntu.
 
 To summarize: You have a base image, you apply provisioning of some kind
@@ -179,7 +179,7 @@ basic stuff, like Ruby, for Puppet.
 2. Use that Vagrant box to develop my Puppet scripts for the application,
 such as running the Python web application.
 3. Once I was happy with the Puppet scripts, I used Packer to build a development VM for
-VMWare that had all of the applications dependencies installed.
+VMware that had all of the applications dependencies installed.
 4. I used that Vagrant box to do my application development.
 5. When I was ready to test on real infrastructure, I simply added the `amazon-ebs`
 builder to my Packer template. My same provisioning scripts I developed
