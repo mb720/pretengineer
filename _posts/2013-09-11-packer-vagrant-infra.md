@@ -189,7 +189,7 @@ In this example, adding more app instances is trivial, as we have a fully-config
 AMI to start from. It also reduces the time from launch to responding to requests
 to minutes, instead of waiting for provisioning scripts to run.
 
-But, this isn't all brand new technology – snapshots and AMI's have been around for
+But, this isn't all brand new technology – snapshots and AMIs have been around for
 a while. Developers are certainly aware of the boons of the "golden image" approach.
 
 However, what Packer does is introduce a workflow that assists in doing this
