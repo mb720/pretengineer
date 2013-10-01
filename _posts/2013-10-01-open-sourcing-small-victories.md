@@ -30,6 +30,7 @@ is the best policy" and I tend to agree.
 - About 13k visits in total, the bulk of that on the day we shipped.
 [Google Analytics Screenshot](https://dl.dropboxusercontent.com/s/t2thf77n6hs0xfi/2013-09-30%20at%206.49%20PM.png)
 - 774 websites created
+- [Public Metrics Dashboard](https://metrics.librato.com/share/dashboards/3nggi1qc)
 - At 1000 a minute since launch, ~99,360,000 requests to the Dropbox API thus far (holy crap)
 - Two independent Heroku dynos (1 background worker, 1 web)
 - Free (small) Redis and Postgres instances
