@@ -3,7 +3,6 @@ title: Open-Sourcing Small Victories
 layout: post
 summary: A post-mortem and open-sourcing of a moderately successful side project
 filename: "_posts/2013-10-01-open-sourcing-small-victories.md"
-draft: true
 ---
 
 Small Victories is a web app that makes a website from your Dropbox
