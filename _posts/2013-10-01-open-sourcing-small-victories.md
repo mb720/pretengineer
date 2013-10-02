@@ -7,11 +7,11 @@ draft: true
 ---
 
 Small Victories is a web app that makes a website from your Dropbox
-folder. It was moderately successful after launch and has since stagnated.
+folder. It was moderately successful after launch and has since stagnated. If you've 
+ever read about some project and thought, agh, "Yet-Another-X",
+we made one of those (kinda – read on). 
 
-If you've ever read about some project and thought, agh, "Yet-Another-X" –
-we made one of those (kinda – see below). "Yet Another
-Dropbox Folder to Website" app. We thought it was cool at the time – and still do,
+It was a "Yet Another Dropbox Folder to Website" japp. We thought it was cool at the time – and still do,
 of course – but we've been distracted by other things and it's just been
 hanging out.
 
@@ -45,7 +45,11 @@ saving a file in the folder. The rest is automatic and relatively fast.
 It supports custom domains, so you can have a website like
 `picnics.jack.ly` and all of your picnic photos now have a home.
 
-While other Dropbox CMS services certainly exist, just running on the same platform doesn't make them all the same. Small Victories aims to be dead-simple: there's no admin interface, and there's no need to 'publish' – it just goes. Simple doesn't mean it's not powerful. We automatically inject any javascript and CSS you write, so your only limitations are really the creativity to work within some boundaries.
+While other Dropbox CMS services certainly exist, just running on the same platform 
+doesn't make them all the same. Small Victories aims to be dead-simple: there's no admin 
+interface, and there's no need to 'publish' – it just goes. Simple doesn't mean it's not 
+powerful. We automatically inject any JavaScript and CSS you write, so your only limitations 
+are really the creativity to work within some boundaries.
 
 The whole thing is kind of hack – part of what makes it fun to build.
 For example, a user changing the custom domain in their `_settings.txt`
