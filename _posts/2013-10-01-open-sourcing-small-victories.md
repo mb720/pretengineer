@@ -68,10 +68,9 @@ who knows where with who knows what latency. Kind of feels funny to me.
 
 Small Victories obviously appealed to some folks out there, as evident by the traffic it attracted
 on the first day. But it takes blood and sweat to take something from a
-zero day success to something tangibly useful for many. There are many
-applications trying to solve this same problem
+zero day success to something tangibly useful for many.
 
-There are thousands of projects like this out there, I am sure. Small services – quick hacks – built fast in a few days and then left to hang around the gates
+There are many projects like this out there, I am sure. Small services – quick hacks – built fast in a few days and then left to hang around the gates
 waiting for someone to care.
 
 Sometimes you go searching for inspiration, or specific
