@@ -11,7 +11,7 @@ folder. It was moderately successful after launch and has since stagnated. If yo
 ever read about some project and thought, agh, "Yet-Another-X",
 we made one of those (kinda – read on). 
 
-It was a "Yet Another Dropbox Folder to Website" japp. We thought it was cool at the time – and still do,
+It was a "Yet Another Dropbox Folder to Website" app. We thought it was cool at the time – and still do,
 of course – but we've been distracted by other things and it's just been
 hanging out.
 
