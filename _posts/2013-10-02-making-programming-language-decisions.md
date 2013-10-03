@@ -3,6 +3,7 @@ title: Choosing Programming Languages for Web Development
 layout: post
 summary: What matters, what doesn't, and where your challenges actually are
 filename: _posts/2013-10-02-making-programming-language-decisions.md
+draft: true
 ---
 
 I've heard a lot of smart people talk like this, and I have now
