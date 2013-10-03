@@ -52,13 +52,15 @@ are really the creativity to work within some boundaries.
 
 The whole thing is kind of hack – part of what makes it fun to build.
 For example, a user changing the custom domain in their `_settings.txt`
-file fires off an HTTP request to the Heroku API to add a new domain for
-that app. That means there are hundreds of domains on one Heroku app.
+file fires off [an HTTP request](https://github.com/pearkes/sv-fetcher/blob/master/settings.go#L73-L75)
+to the Heroku API to add a new domain for that app. That means there are
+hundreds of domains on one Heroku app.
 
 Don't stop there – Dropbox defaults to expiring links at 4 hour
 intervals – that won't work for us when we are relative linking assets
 straight into the Dropbox folder. But, it turns out Dropbox uses a
-guessable URL scheme for it's "permanent" asset URLs.
+[guessable URL scheme](https://github.com/pearkes/sv-fetcher/blob/master/fetcher.go#L185-L191)
+for it's "permanent" asset URLs.
 
 A big HTML blob just gets rendered and shoved in Redis so it can be served
 directly to a incoming HTTP request. This Redis instance is free and hosted
