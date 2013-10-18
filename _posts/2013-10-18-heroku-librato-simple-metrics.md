@@ -19,7 +19,7 @@ of course, and there's also many ways to display that information, to alert
 on certain thresholds ("> 10 signups in last 24 hours!") or to check-in
 on progress.
 
-If you use Heroku and aren't recording metrics, Librato just upgraded
+If you use Heroku and aren't recording metrics, Librato just [upgraded](http://blog.librato.com/posts/2013/10/16/heroku-add-on-logs-integration)
 their add-on to make it *really* easy and completely agnostic to the
 technology you use.
 
