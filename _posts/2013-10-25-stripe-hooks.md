@@ -1,5 +1,5 @@
 ---
-title: Open Sourcing Stripe Hooks
+title: Open-Sourcing Stripe Hooks
 layout: post
 summary: An independent service to handle receipts and notifications with Stripe
 filename: _posts/2013-10-25-stripe-hooks.md
