@@ -25,9 +25,20 @@ So, I made [stripe-hooks](https://github.com/pearkes/stripe-hooks). It's
 a boiler plate system for sending webhooks, templating the emails
 and customizing it for your use case.
 
-The default template renders out stuff like this:
+## An Example
+
+1. Jane Customer purchases a copy of the B side *Everybody's Next One* by Steppenwolf on
+your website
+2. Stripe charges his card and sends a `charge.succeeded` webhook
+3. `stripe-hooks` picks up the hook and, based on the configuration,
+sends the administrator an email notifying them, and Jane a receipt
+
+The basic email templates look like this, but they can be customized
+to fit your needs:
 
 <div class="img-center"><img src="/static/img/hooks/new-invoice.png" class="img-responsive"></div>
+
+## Using It
 
 It's written in Python but you really don't need to touch the code – all
 you do is configure it using a JSON file and choose which Stripe events
