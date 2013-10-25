@@ -15,6 +15,11 @@ a {
   text-align: center;
 }
 
+ol, ul {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
 p {
   margin-top: 22px;
   margin-bottom: 22px;
