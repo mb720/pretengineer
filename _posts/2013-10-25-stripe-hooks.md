@@ -29,7 +29,7 @@ and customizing it for your use case.
 
 1. Jane Customer purchases a copy of the B side *Everybody's Next One* by Steppenwolf on
 your website
-2. Stripe charges his card and sends a `charge.succeeded` webhook
+2. Stripe charges her card and sends a `charge.succeeded` webhook
 3. `stripe-hooks` picks up the hook and, based on the configuration,
 sends the administrator an email notifying them, and Jane a receipt
 
