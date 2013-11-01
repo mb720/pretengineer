@@ -2,7 +2,7 @@
 title: Skipping History Entries in Ember Transitions
 layout: post
 summary: Avoid polluting the History API with redirect loops in Ember.js
-filename: _posts/2013-10-1-ember-skipping-history.md
+filename: _posts/2013-11-1-ember-skipping-history.md
 ---
 
 Occasionally you'll redirect a user in [Ember](http://emberjs.com/) silently
