@@ -120,7 +120,7 @@ your Puppet scripts over a base image (like Ubuntu 12.04), and creating a Vagran
 box. Packer can automate that procedure.
 
 However, this doesn't replace provisioning in development. If you make changes
-to your Puppet scripts, simply re-run them with `vagrant provison`. No
+to your Puppet scripts, simply re-run them with `vagrant provision`. No
 need to re-build the base image.
 
 So, that's how you use Packer to improve your development workflow. But
