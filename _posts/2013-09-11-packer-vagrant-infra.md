@@ -154,7 +154,7 @@ to include Amazon AWS.
 
 This tells Packer to build two things:
 
-- A Virtualbox compatible virtual machine
+- A VirtualBox compatible virtual machine
 - An Amazon AMI
 
 The provisioners, however, are exactly the same. This means that your
